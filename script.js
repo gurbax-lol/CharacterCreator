@@ -1,6 +1,6 @@
 const ALL_PHYSICAL_TRAITS = {
     "movement speed": ["fast", "slow"],
-    "behaviour": ["fidgety", "still"],
+    "actions": ["fidgety", "calm, controlled"],
     "movement": ["legato", "staccato"],
     "posture": ["upright", "slouching"],
     "walk": ["uncontrolled", "disciplined", "limp", "stroll", "swagger"],
