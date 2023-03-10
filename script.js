@@ -1,19 +1,19 @@
-const allPhysicaTraits = {
-    "speed": ["fast", "slow"],
+const ALL_PHYSICAL_TRAITS = {
+    "movement speed": ["fast", "slow"],
     "behaviour": ["fidgety", "still"],
     "movement": ["legato", "staccato"],
-    "posture": [],
-    "walk": [],
-    "weight distribution": [],
-    "flexibility": [],
-    "led movement": [],
-    "hands": [],
-    "shoulders": [],
-    "fingers": [],
-    "body": []
+    "posture": ["upright", "slouching"],
+    "walk": ["uncontrolled", "disciplined", "limp", "stroll", "swagger"],
+    "heavy": ["right", "left"],  // weight distribution
+    "flexibility": ["rubbery", "rigid"],
+    "led movement": ["head", "chest", "belly"],
+    "arms / hands": ["open", "closed"],
+    "shoulders": ["raised", "relaxed"],
+    "fingers": ["spread", "joined", "intertwined"],
+    "body": ["open", "closed"]
 }
 
-const allVocalTraits = {
+const ALL_VOCAL_TRAITS = {
     "accent": ["british", "french", "malayali", "punjabi", "italian", "tapori"],
     "pitch": ["low", "high"],
     "talker": ["fast", "slow"],
@@ -25,14 +25,14 @@ const allVocalTraits = {
 
 function randomTrait(obj) {
     let keys = Object.keys(obj);  // All keys in obj
-    random_key = keys[Math.floor(Math.random() * keys.length)]
-    random_value = obj[random_key][Math.floor(Math.random() * obj[random_key].length)]
-    return `${random_value} ${random_key}`;
+    randomKey = keys[Math.floor(Math.random() * keys.length)]
+    randomValue = obj[randomKey][Math.floor(Math.random() * obj[randomKey].length)]
+    return `${randomValue} ${randomKey}`;
 };
 
 function setTraits() {
-    document.getElementById("physical").innerHTML = randomTrait(allPhysicaTraits);
-    document.getElementById("vocal").innerHTML = randomTrait(allVocalTraits);
+    document.getElementById("physical").innerHTML = randomTrait(ALL_PHYSICAL_TRAITS);
+    document.getElementById("vocal").innerHTML = randomTrait(ALL_VOCAL_TRAITS);
 }
 
 setTraits()
