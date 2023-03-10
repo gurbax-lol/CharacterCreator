@@ -1,13 +1,26 @@
 const allPhysicaTraits = {
     "speed": ["fast", "slow"],
     "behaviour": ["fidgety", "still"],
-    "movement": ["legato", "staccato"]
+    "movement": ["legato", "staccato"],
+    "posture": [],
+    "walk": [],
+    "weight distribution": [],
+    "flexibility": [],
+    "led movement": [],
+    "hands": [],
+    "shoulders": [],
+    "fingers": [],
+    "body": []
 }
 
 const allVocalTraits = {
     "accent": ["british", "french", "malayali", "punjabi", "italian", "tapori"],
     "pitch": ["low", "high"],
-    "talker": ["fast", "slow"]
+    "talker": ["fast", "slow"],
+    "volume": ["loud", "whispery"],
+    "articulation": ["excellent", "poor"],
+    "jaw": ["tight", "loose"],
+    "tongue": ["active", "lazy"],
 }
 
 function randomTrait(obj) {
